@@ -28,6 +28,7 @@ public class Patient {
     private LocalDate dateOfBirth;
 
     @NotNull
+    @Column(name = "registered_date", nullable = true)
     private LocalDate registerDate;
 
     public UUID getId() {
