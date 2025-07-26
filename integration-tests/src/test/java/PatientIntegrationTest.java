@@ -35,7 +35,7 @@ public class PatientIntegrationTest {
         given()
                 .header("Authorization", "Bearer " + token)
                 .when()
-                .get("/api/patientsgit ")
+                .get("/api/patients")
                 .then()
                 .statusCode(200)
                 .body("patients", notNullValue());
